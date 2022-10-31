@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/2nd_Team_Week.csproj",
+  "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "_2nd_Team_Week",
+  "RootNamespace": "BotanicalAdventure",
   "Documents": [],
   "SerializationFormat": "0.2"
 }

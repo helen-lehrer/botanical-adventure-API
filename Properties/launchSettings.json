@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "_2nd_Team_Week": {
+    "BotanicalAdventure": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
