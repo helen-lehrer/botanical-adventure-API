@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cTk9EJtM40rWU1GHYdr65bUoP/xe4KpvgRYEcguXmKfA0hapfIroDUbC2AwWghD1XM+Ky9mu3oBWjN6MDkyjBg==",
+  "dgSpecHash": "hOuO5cwY5xP6wlYh+w3JYfBQokJQHoXrbk9VGS+WyvYd/OMoMo1lUeB0QaDjYkcaI0BLVbhALxgVDUYUxKJHpw==",
   "success": true,
-  "projectFilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj",
+  "projectFilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj",
   "expectedPackageFiles": [
     "/Users/owner/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/owner/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.0/microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",

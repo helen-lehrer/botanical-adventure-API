@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Proxies;
 using System;
 
 namespace BotanicalAdventure.Models
@@ -10,6 +11,8 @@ namespace BotanicalAdventure.Models
       {
 
       }
+    public DbSet<Item> Items { get; set; }
+
       protected override void OnModelCreating(ModelBuilder builder)
     {
       builder.Entity<Item>()
@@ -54,7 +57,7 @@ namespace BotanicalAdventure.Models
               new Item  { ItemId = 9, Category = "Forest", Type = "Flower", Name = "Columbian Monkshood", Latin ="Aconitum columbianum", Description = "Named for its hooded flowers, the columbian Mondshood's sepals resemble a monk's cowl.", Habitat = "Moist wet areas.", Smell = "Ravioli", Taste = "", Edible = false, EdibleDesc = "This plant is considered to be poisonous", Symbolism = "Beware, a deadly foe is near", History = "", Score = 25, Hint = "Blooms in summer." , Difficulty = "easy", Found = false, Picture = "../assets/img/forest_flower_1_columbianmonkshood.jpg"},
 
 
-              new Item { ItemId = 1, Category = "Forest", Type = "Flower", Name = "Huckle Berry", Latin ="Vaccinium Corymbosum", Description = "Huckleberry fruits are edible and resemble blueberries (Vaccinium species), to which they are closely related.", Habitat = "require acidic and moist but well-drained soil. Can only be found at elevations above 5,000 ft.", Smell = "Ravioli", Taste = "Better than blue berries", Edible = true, EdibleDesc = "Berries are edible", Symbolism = "", History = "Huckleberry plants can only grow in the wild", Score = 100, Hint = "check in high places" , Difficulty = "hard", Found = false, Picture = "../assets/img/forest_flower_3_huckleberry.jpg"},
+              new Item { ItemId = 28, Category = "Forest", Type = "Flower", Name = "Huckle Berry", Latin ="Vaccinium Corymbosum", Description = "Huckleberry fruits are edible and resemble blueberries (Vaccinium species), to which they are closely related.", Habitat = "require acidic and moist but well-drained soil. Can only be found at elevations above 5,000 ft.", Smell = "Ravioli", Taste = "Better than blue berries", Edible = true, EdibleDesc = "Berries are edible", Symbolism = "", History = "Huckleberry plants can only grow in the wild", Score = 100, Hint = "check in high places" , Difficulty = "hard", Found = false, Picture = "../assets/img/forest_flower_3_huckleberry.jpg"},
               
               new Item { ItemId = 10, Category = "Coast", Type = "Flower",
               Name = "Common yarrow", Latin = "Achillea millefolium", Description = "This is an herbaceous, perennial plant that produces one to several stems 8-40 inches in height. The leaves are cauline, and more or les clasping.", Habitat = "It can grow from sea level to 3,500 m in elevation. It is frequently found in the mildly disturbed soil grasslands and open forests.",
@@ -184,10 +187,33 @@ namespace BotanicalAdventure.Models
               Smell = "pine scent", Taste = "Edible conifer flavours range from citrusy lemon and bitter grapefruit to herbaceous rosemary and woodsy pine", Edible = true,
               EdibleDesc = "Grand fir needles were traditionally used by West Coast First Nations as a flavour agent for food and as a medicinal herb.", Symbolism = "Fir trees symbolize determination, honesty, and the endurance that comes with hope for the future.", History = "It was first described in 1831 by David Douglas. It is closely related to white fir. The bark was historically believed to have medicinal properties, and it is popular in the United States as a Christmas tree. Its lumber is a softwood, and it is harvested as a hem fir.",
               Score = 65, Hint = "All firs are easily recognized by the smooth bark on young twigs and small, round leaf scars left by dropped needles. Grand Fir is most easily recognized by its long needles borne horizontally on opposite sides of the twigs.  The entire branch will appear flattened so that it has distinct upper and lower sides.", Difficulty = "hard",
-              Found = false, Picture = "../assets/img/../assets/img/desert_tree_3_grandfir.jpg"}
+              Found = false, Picture = "../assets/img/../assets/img/desert_tree_3_grandfir.jpg"},                
+              new Item { ItemId = 33, Category = "Coastal", Type = "Tree",
+              Name = "Douglas Fir", Latin = "Pseudotsuga menziesii", Description = "Douglas-firs are medium-size to extremely large evergreen trees. The leaves are flat, soft, linear needles, generally resembling those of the firs, occurring singly rather than in fascicles; they completely encircle the branches, which can be useful in recognizing the species.", Habitat = "Grows in wet, coastal and inland areas",
+              Smell = "Strong, sweet, clean, piney-fresh scent with citrusy notes", Taste = "Meyer lemon peel or tangerine peel. Another might taste like peach skin, and then another may be a sharp resiny green flavor", Edible = true,
+              EdibleDesc = "Douglas fir spring tips are edible and are high in Vitamin C and electrolytes. You can eat them fresh, freeze them, or dry them. Both hot tea and sun tea are tasty.", Symbolism = "The symbolism of a fir tree carries the message of hope during challenges and encourages you to have patience while you wait for a better future.", History = "Native Americans used Douglas-fir wood for fuel, small utensils, and tools; they used its pitch for sealing joints and caulking canoes and water containers. They also used the tree and its parts for a variety of medicinal purposes.",
+              Score = 25, Hint = "These tree's cones have 3-forked bracts sticking out from the scales. These look like the tails and hind feet of mice hiding in the cone", Difficulty = "Easy",
+              Found = false, Picture = "../assets/img/coastal_tree_1_douglasfir.jpg"},
+              new Item { ItemId = 29, Category = "Forest", Type = "Tree",
+              Name = "Big Leaf Maple", Latin = "Acer macrophyllum", Description = "Bigleaf maple can grow up to 48 metres (158 feet) tall, but more commonly reaches 15-20 m (50-65 ft) tall. The bigleaf maple has the largest leaves of any maple,  ", Habitat = "",
+              Smell = "Fragrant greenish-yellow flowers bloom in April-May", Taste = "Those gorgeous clusters are also delicious for us to eat, especially when they're young and tender.", Edible = true,
+              EdibleDesc = "Big Leaf maple has the sweetest sap of all the native northwest maples, However because the sugar content is quite low, you'll need to gather a lot more to produce the same amount of sweet syrup as the sugar mapleThose gorgeous clusters are also delicious for us to eat, especially when they're young and tender.", Symbolism = "Maple is a symbol of strength and endurance", History = "Some of its leaves grow so big Native Americans used them as containers and plates. They also called the Big leaf maple the “paddle tree” because its wood makes excellent canoe paddles.",
+              Score = 25, Hint = "It usually dangles unusually large, 5-lobed, palmate (palm-shaped) leaves from its branches.", Difficulty = "Easy",
+              Found = false, Picture = "../assets/img/coastal_tree_1_bigleafmaple.jpg"},
+              new Item { ItemId = 30, Category = "Mountain", Type = "Tree",
+              Name = "Mountain Hemlock", Latin = "Tsuga mertensiana", Description = "A subalpine tree with only a slightly drooping leader or top; rarely grows more than 30 metres tall and is often stunted at high elevations. Needles are uniform in size, glossy, and yellow-green to deep bluish-green. They cover the branches densely on all sides or may be mostly upturned.", Habitat = "Usually found on cold, snowy subalpine sites where it grows slowly, sometimes attaining more than 800 years in age.",
+              Smell = "They retain an attractive scent for several years", Taste = "", Edible = true,
+              EdibleDesc = "Inner bark - raw or dried, ground into a powder and then used as a thickening in soups etc or mixed with cereals when making bread. It is best used in the spring. An emergency food, it is only used when all else fails. A herbal tea is made from the young leaves and shoot tips.", Symbolism = "Their drooping boughs and fine, soft needles define them as elegant, wise elders that teach us to embrace change gracefully.", History = "Native Americans used the species less often than western hemlock, but specifically used mountain hemlock boughs as beds and bathing brushes",
+              Score = 100, Hint = "far larger size with darker red and brown colors in contrast to the tiny tan cones of the Western Hemlock", Difficulty = "Hard",
+              Found = false, Picture = "../assets/img/.jpg"},
+              new Item { ItemId = 31, Category = "Coastal", Type = "Tree",
+              Name = "Pacific Yew", Latin = "Taxus brevifolia", Description = "A small evergreen conifer (sometimes appearing as a shrub), the Pacific yew grows to 10-15 m (33-49 ft) tall, It has thin, scaly bark, red then purplish-brown,covering a thin layer of off-white sap wood with a darker heartwood that varies in color from brown to a purplish hue to deep red, or even bright orange when freshly cut.The leaves are lanceolate, flat, and dark green. ", Habitat = "Dry interior forests, the species develops best along mountain streams, and in shady canyons, ravines, and coves. Within the moist maritime climate of the Pacific Northwest, it grows most abundantly in drier, warmer environments.",
+              Smell = "Odorless", Taste = "cherry jello-like taste", Edible = true,
+              EdibleDesc = "While many parts of yews are poisonous and can be fatal if eaten, the juicy red cup around the seed seems to be edible as long as the seed within is not chewed or swallowed", Symbolism = "", History = "Traditionally, the resilient and rot-resistant wood was used by Native Americans to make tools, bows (backed with sinew), arrows, and canoe paddles.[4] Other purposes for yew included making harpoons, fishhooks, wedges, clubs, spoons, drums, snowshoes, and arrowheads.[4] The foliage and bark was used for medicinal purposes.",
+              Score = 0, Hint = "It grows in varying types of environments; however, in drier environments it is mostly limited to stream-side habitats, whereas in moist environments it will grow up onto slopes and ridgetops", Difficulty = "",
+              Found = false, Picture = "../assets/img/.jpg"}
               );
     }
-    public DbSet<Item> Items { get; set; }
 
   }
 }

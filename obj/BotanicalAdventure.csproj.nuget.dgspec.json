@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj": {}
+    "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj": {}
   },
   "projects": {
-    "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj": {
+    "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj",
+        "projectUniqueName": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj",
         "projectName": "BotanicalAdventure",
-        "projectPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/BotanicalAdventure.csproj",
+        "projectPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj",
         "packagesPath": "/Users/owner/.nuget/packages/",
-        "outputPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/2nd_Team_Week/obj/",
+        "outputPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/owner/.nuget/NuGet/NuGet.Config"
