@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 
 namespace BotanicalAdventure.Models
@@ -11,8 +10,6 @@ namespace BotanicalAdventure.Models
       {
 
       }
-      public DbSet<Item> Items { get; set; }
-
       protected override void OnModelCreating(ModelBuilder builder)
     {
       builder.Entity<Item>()
@@ -190,5 +187,7 @@ namespace BotanicalAdventure.Models
               Found = false, Picture = "../assets/img/../assets/img/desert_tree_3_grandfir.jpg"}
               );
     }
+    public DbSet<Item> Items { get; set; }
+
   }
 }
