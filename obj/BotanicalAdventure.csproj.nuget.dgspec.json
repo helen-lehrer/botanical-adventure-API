@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj": {}
+    "C:\\Users\\HLehr\\desktop\\team-week-project\\BotanicalAdventure.csproj": {}
   },
   "projects": {
-    "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj": {
+    "C:\\Users\\HLehr\\desktop\\team-week-project\\BotanicalAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj",
+        "projectUniqueName": "C:\\Users\\HLehr\\desktop\\team-week-project\\BotanicalAdventure.csproj",
         "projectName": "BotanicalAdventure",
-        "projectPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/BotanicalAdventure.csproj",
-        "packagesPath": "/Users/owner/.nuget/packages/",
-        "outputPath": "/Users/owner/Documents/Programación/Epicodus/Csharp/BotanicalAdventure/obj/",
+        "projectPath": "C:\\Users\\HLehr\\desktop\\team-week-project\\BotanicalAdventure.csproj",
+        "packagesPath": "C:\\Users\\HLehr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HLehr\\desktop\\team-week-project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/owner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\HLehr\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
