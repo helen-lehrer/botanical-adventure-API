@@ -101,7 +101,7 @@ namespace BotanicalAdventure.Models
               Smell = "fragrant", Taste = "", Edible = false,
               EdibleDesc = "", Symbolism = "", History = "",
               Score = 25, Hint = "The blossoms are so profuse that they literally cover the evergreen foliage of narrow, needle-like, bright green leaves.", Difficulty = "easy",
-              Found = false, CatPicture = "~/css/assets/img/desert_flower_1_spreadingphlox.jpg" Picture = "https://drive.google.com/file/d/1PT_5RCOoy7mps2HhD99oYgMjkar5BsoI/preview"},
+              Found = false, CatPicture = "~/css/assets/img/desert_flower_1_spreadingphlox.jpg", Picture = "https://drive.google.com/file/d/1PT_5RCOoy7mps2HhD99oYgMjkar5BsoI/preview"},
               
               new Item { ItemId = 16, Category = "Desert", Type = "Flower",
               Name = "Sand Lily", Latin = "Leucocrinum monatanum", Description = "Sand lilies can often look like bunches of tissue paper dotting your preview. It grows in rosette-like bunches with 4-8 white flowers per bunch.", Habitat = "sandy or rocky areas",

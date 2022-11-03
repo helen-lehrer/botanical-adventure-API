@@ -20,5 +20,6 @@ namespace BotanicalAdventure.Models
     public string Difficulty { get; set; }
     public bool Found { get; set; }
     public string CatPicture { get; set; }
+    public string Picture { get; set; }
   }
 }
