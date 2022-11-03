@@ -590,7 +590,7 @@ namespace BotanicalAdventure.Migrations
                         new
                         {
                             ItemId = 23,
-                            CatPicture = "../assets/img/desert_tree_1_bigsagebrush.jpg",
+                            CatPicture = "~/css/assets/img/desert_tree_1_bigsagebrush.jpg",
                             Category = "Desert",
                             Description = "This shrub grows 3-6 1/2 feet tall with a thick, woody trunk. Leaves are gray-green, evergreen, and soft. They have 3 lobes on a wide tip.",
                             Difficulty = "easy",
@@ -612,7 +612,7 @@ namespace BotanicalAdventure.Migrations
                         new
                         {
                             ItemId = 24,
-                            CatPicture = "../assets/img/desert_tree_1_ponderosapine.jpg",
+                            CatPicture = "~/css/assets/img/desert_tree_1_ponderosapine.jpg",
                             Category = "Desert",
                             Description = "Ponderosa pines are a very common evergreen in Central Oregon. The bark helps to distinguish it from other species. Mature to over-mature individuals have yellow to orange-red bark in broad to very broad plates with black crevices. Younger trees have blackish-brown bark, referred to as blackjacks by early loggers.",
                             Difficulty = "easy",
