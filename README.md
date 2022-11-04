@@ -33,7 +33,7 @@ _api/items provides with a database of mushrooms, flowers and trees. Users can f
 * _If you haven't yet, install the dotnet ef tool through your command line (run $ dotnet tool install --global dotnet-ef --version 5.0.1)_
 * _Run $ dotnet ef database update_
 * _Run $ dotnet watch run to run the API. It will open the http://localhost:5004/api/items endpoint. 
-* _On the root directory, create an appsettings.json fie and add the following code:_
+* _On the root directory, create an appsettings.json fie and add the following code:_  
 {
   "Logging": {
     "LogLevel": {
