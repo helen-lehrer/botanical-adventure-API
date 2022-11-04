@@ -42,7 +42,7 @@ _api/items provides with a database of mushrooms, flowers and trees. Users can f
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=forage_mvc;uid=root;pwd=[Your-MySql-password-here];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=botanical_adventure;uid=root;pwd=[Your-MySql-password-here];"
   }
 }
 * _Run '$ dotnet ef database update'_
