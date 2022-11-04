@@ -21,7 +21,7 @@ namespace BotanicalAdventure.Controllers
 
     //GET api/items
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Item>>> Get (string name, string category, string type, string difficulty, bool found)
+    public async Task<ActionResult<IEnumerable<Item>>> Get (string name, string category, string type, string difficulty)
     {
       var query = _db.Items.AsQueryable();
 
@@ -44,16 +44,7 @@ namespace BotanicalAdventure.Controllers
       {
         query = query.Where(entry => entry.Difficulty == difficulty);
       }
-
-      if (found == true)
-      {
-        query = query.Where(entry => entry.Found == true);
-      }
-
-      if (found == false)
-      {
-        query = query.Where(entry => entry.Found == false);
-      }
+      
       return await query.ToListAsync();
     }
 
