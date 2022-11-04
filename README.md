@@ -45,8 +45,8 @@ _api/items provides with a database of mushrooms, flowers and trees. Users can f
     "DefaultConnection": "Server=localhost;Port=3306;database=forage_mvc;uid=root;pwd=[Your-MySql-password-here];"
   }
 }
-* _Run $ dotnet ef database update_
-* _Run $ dotnet watch run to run the API. It will open the http://localhost:5004/api/items endpoint. 
+* _Run '$ dotnet ef database update'_
+* _Run '$ dotnet watch run' to run the API. It will open the http://localhost:5004/api/items endpoint._ 
 
 ## Bugs
 
